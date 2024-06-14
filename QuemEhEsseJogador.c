@@ -26,6 +26,8 @@ void inicio() {
     
     switch(role) {
         case 1: // CARRY
+
+
             printf("Digite: 1 se esse jogador e lendario moh fih\n");
             printf("Digite: 2 se esse jogador joga essa role com frequencia\n");
             printf("Digite: 3 se esse jogador joga essa role com pouca frequencia\n");
@@ -34,6 +36,11 @@ void inicio() {
             
             switch(frequencia) {
                 case 1:
+
+            printf("Probabilidades estimadas:\n");
+            printf("Monstro 50%%\n");
+            printf("Guilherme 50%%\n\n");
+
                     printf("Se esse jogador jogar bem digite 1, se jogar ruim so o meme digite 2\n");
                     scanf("%d", &qualidade);
                     if (qualidade == 1) {
@@ -43,6 +50,13 @@ void inicio() {
                     }
                     break;
                 case 2:
+
+                    printf("Probabilidades estimadas:\n");
+                    printf("Monstro 39%%\n");
+                    printf("Yago 36%%\n");
+                    printf("AMD 25%%\n\n");
+
+
                     printf("Se esse jogador jogar bem digite 1\n");
                     printf("Se esse jogador jogar razoavel digite 2\n");
                     printf("Se esse jogador jogar muito mais ou menos digite 3\n");
@@ -56,6 +70,12 @@ void inicio() {
                     }
                     break;
                 case 3:
+                    printf("Probabilidades estimadas:\n");
+                    printf("Yago 30%%\n");
+                    printf("Alex 30%%\n");
+                    printf("AMD 30%%\n");
+                    printf("Guilherme 10%%\n\n");
+                    
                     printf("Se esse jogador jogar muito bem digite 1\n");
                     printf("Se esse jogador jogar bem digite 2\n");
                     printf("Se esse jogador jogar razoavel digite 3\n");
@@ -72,6 +92,7 @@ void inicio() {
                     }
                     break;
                 case 4:
+
                     strcpy(nome, "Guilherme");
                     break;
             }
@@ -84,6 +105,12 @@ void inicio() {
             
             switch(frequencia) {
                 case 1:
+
+
+                   printf("Probabilidades estimadas:\n");
+                   printf("Guilherme 80%%\n");
+                   printf("Yago 20%%\n\n");
+
                     printf("Se esse jogador jogar bem digite 1, se jogar razoavel digite 2\n");
                     scanf("%d", &qualidade);
                     if (qualidade == 1) {
@@ -93,6 +120,11 @@ void inicio() {
                     }
                     break;
                 case 2:
+
+                    printf("Probabilidades estimadas:\n");
+                    printf("Alex 60%%\n");
+                    printf("Nycolas 40%%\n\n");
+
                     printf("Se esse jogador jogar bem digite 1, se jogar razoavel digite 2\n");
                     scanf("%d", &qualidade);
                     if (qualidade == 1) {
@@ -111,6 +143,11 @@ void inicio() {
             
             switch(frequencia) {
                 case 1:
+
+            printf("Probabilidades estimadas:\n");
+            printf("AMD 70%%\n");
+            printf("Yago 30%%\n\n");
+
                     printf("Se esse jogador jogar bem digite 1, se jogar razoavel digite 2\n");
                     scanf("%d", &qualidade);
                     if (qualidade == 1) {
@@ -120,6 +157,10 @@ void inicio() {
                     }
                     break;
                 case 2:
+
+                    printf("Guilherme 20%%\n");
+                    printf("Monstro 80%%\n\n");
+
                     printf("Se esse jogador jogar bem digite 1, se jogar ruim digite 2\n");
                     scanf("%d", &qualidade);
                     if (qualidade == 1) {
@@ -138,6 +179,11 @@ void inicio() {
             
             switch(frequencia) {
                 case 1:
+
+            printf("Probabilidades estimadas:\n");
+            printf("Nycolas 70%%\n");
+            printf("Alex 30%%\n\n"); 
+
                     printf("Se esse jogador jogar bem digite 1, se jogar razoavel digite 2\n");
                     scanf("%d", &qualidade);
                     if (qualidade == 1) {
@@ -147,6 +193,12 @@ void inicio() {
                     }
                     break;
                 case 2:
+
+                    printf("Guilherme 10%%\n");
+                    printf("AMD 60%%\n");
+                    printf("Yago 13%%\n");
+                    printf("Monstro 12%%\n\n");
+
                     printf("Se esse jogador jogar muito bem digite 1\n");
                     printf("Se jogar bem digite 2\n");
                     printf("Se jogar razoavel digite 3\n");
@@ -172,6 +224,10 @@ void inicio() {
             
             switch(frequencia) {
                 case 1:
+                   printf("Probabilidades estimadas:\n");
+                   printf("nycolas 70%%\n"); 
+                   printf("alex 30%%\n\n"); 
+
                     printf("Se esse jogador jogar bem digite 1, se jogar razoavel digite 2\n");
                     scanf("%d", &qualidade);
                     if (qualidade == 1) {
@@ -181,6 +237,11 @@ void inicio() {
                     }
                     break;
                 case 2:
+                    printf("Probabilidades estimadas:\n");
+                    printf("AMD 70%%\n"); 
+                    printf("yago 15%%\n"); 
+                    printf("monstro 15%%\n\n");
+
                     printf("Se esse jogador jogar bem digite 1\n");
                     printf("Se esse jogador jogar razoavel digite 2\n");
                     printf("Se esse jogador jogar ruim digite 3\n");
@@ -198,13 +259,13 @@ void inicio() {
         
         case 6: // Jogadores que quase nao jogam
             strcpy(nome, "Tiago ou Macaco");
-            printf("%s quase nao joga DOTA, entao nao errei\n", nome);
+            printf("%s quase nao joga DOTA, entao nao errei\n\n", nome);
             inicio();
             return;
         
         case 7: // Jogadores que nao jogam
             strcpy(nome, "Eguiberto, Leandro ou Durval");
-            printf("%s nao joga DOTA, entao nao errei\n", nome);
+            printf("%s nao joga DOTA, entao nao errei\n\n", nome);
             inicio();
             return;
         
@@ -218,9 +279,9 @@ void inicio() {
     scanf("%s", resposta);
     
     if (strcmp(resposta, "s") == 0) {
-        printf("Sou foda\n");
+        printf("Sou foda\n\n");
     } else {
-        printf("Okay errei, mas o Guilherme me fez em uma tarde.\n");
+        printf("Okay errei, mas o Guilherme me fez em uma tarde.\n\n");
     }
     
     inicio();
